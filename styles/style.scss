@@ -1,0 +1,79 @@
+@import 'home';
+
+
+$black60 : rgba(0, 0, 0, 0.6);
+
+html{
+    font-size: 62.5%;
+    //makes REM = 10px (easier math)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    color: #000000;
+    font-family: "Montserrat",sans-serif;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600; //semibold
+
+}
+h2{
+    font-size: 2rem;
+    font-weight: 400; //normal
+    color: $black60;
+}
+
+li{
+    font-size: 2.5rem;
+    font-weight: 300; //light
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+.covid{
+    color: rgba(174, 136, 0, 1);
+}
+
+
+.divider{
+    height: 5rem;
+}
+
+@media screen and (max-width: 1040px){
+    html{
+        font-size: 40%;
+    }
+    .home{
+        grid-template-columns: 10% 1fr 10%;
+        grid-template-rows: auto;
+
+        .right{
+            grid-column: 2/3;
+            img{
+                padding-top: 5rem;
+            }
+        }
+
+        .skills{
+            grid-column: 2/3;
+            grid-row: 4/5;
+        }
+        
+    }
+    nav{
+        width: 100%;
+    }
+
+    .actions{
+        display: none;
+    }
+}
