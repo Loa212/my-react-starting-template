@@ -21,28 +21,37 @@
         <div class="nav-container">
             <nav>
                 <div class="leading">
-                    <img src="/images/logo.ico" alt="logo">
-                    <h1 class="logo">Loris Anobile</h1>
+                    <img src="/images/logo.ico" alt="logo" id="logoPng">
+                    <h1 class="logo-text">Loris Anobile</h1>
                 </div>
                 <div class="actions">
                     <ul>
-                        <li><a class="covid" href="#covid-19">COVID-19</a></li>
+                        <li><a class="covid" href="#covid-19">COVID19</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a class="covid" href="#covid-19">COVID19</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="hamburger">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                </div>
             </nav>
         </div>
-        <section class="home">
+        <section class="home" id="home">
                 <div class="left">
                     <h2>Nice to meet you, I’m Loris Anobile,</h2>
                     <h1>I’m a Mobile App Developer with a passion for Web Design.</h1>
                     <h2>I’ve been working in Mobile-first & UI/UX design for the<br>past 6 years. Currently focusing on App Development<br>using Flutter. I’m from Genoa, Italy.</h2>
                     <div class="divider"></div>
-                    <a class= "contactBtn" href="#contact">Let's get in touch!</a>
+                    <a class= "contactBtn" href="#contact" id="contactBtn">Let's get in touch!</a>
                 </div>
                 <div class="right">
-                    <img src="/images/loris2.png" alt="loris">
+                    <img src="/images/loris2.png" alt="loris" id="loris">
                 </div>
                 <div class="skills">
                     <h1>Skills I’m most proud of</h1>
@@ -50,5 +59,26 @@
                 </div>
         </section>
     </main>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("home").style.marginRight = "250px";
+          document.getElementById("logoPng").style.opacity = "0.5";
+          document.getElementById("contactBtn").style.opacity = "0.5";
+          document.getElementById("loris").style.opacity = "0.5";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0px";
+          document.getElementById("home").style.marginRight= "0px";
+          document.getElementById("logoPng").style.opacity = "1";
+          document.getElementById("contactBtn").style.opacity = "1";
+          document.getElementById("loris").style.opacity = "1";
+          document.body.style.backgroundColor = "white";
+        }
+    </script>
+
 </body>
 </html>

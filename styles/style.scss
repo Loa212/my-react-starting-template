@@ -1,4 +1,5 @@
 @import 'home';
+@import 'sideBar';
 
 
 $black60 : rgba(0, 0, 0, 0.6);
@@ -51,15 +52,26 @@ a{
 @media screen and (max-width: 1040px){
     html{
         font-size: 40%;
+        width: fit-content;
     }
+    
     .home{
-        grid-template-columns: 10% 1fr 10%;
+        padding: 3rem 2rem ;
+        align-items: center;
+        grid-template-columns:  1fr ;
         grid-template-rows: auto;
 
         .right{
             grid-column: 2/3;
             img{
                 padding-top: 5rem;
+                width: 300px;
+            }
+        }
+
+        .left{
+            h1{
+                width: 80%;
             }
         }
 
@@ -69,11 +81,18 @@ a{
         }
         
     }
-    nav{
-        width: 100%;
-    }
+   
 
     .actions{
+        display: none;
+    }
+    .logo-text{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1041px){
+    .hamburger{
         display: none;
     }
 }

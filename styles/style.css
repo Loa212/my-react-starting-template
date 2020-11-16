@@ -115,6 +115,56 @@ nav .actions ul li {
   grid-column: 3/4;
 }
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  -webkit-transition: margin-left .5s;
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-width: 500px) {
+  .sidenav {
+    right: 40%;
+    -webkit-transition: 0s;
+    transition: 0s;
+  }
+}
+
 html {
   font-size: 62.5%;
 }
@@ -163,10 +213,17 @@ a {
 @media screen and (max-width: 1040px) {
   html {
     font-size: 40%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .home {
-    -ms-grid-columns: 10% 1fr 10%;
-        grid-template-columns: 10% 1fr 10%;
+    padding: 3rem 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
   }
@@ -177,6 +234,10 @@ a {
   }
   .home .right img {
     padding-top: 5rem;
+    width: 300px;
+  }
+  .home .left h1 {
+    width: 80%;
   }
   .home .skills {
     -ms-grid-column: 2;
@@ -186,10 +247,16 @@ a {
     -ms-grid-row-span: 1;
     grid-row: 4/5;
   }
-  nav {
-    width: 100%;
-  }
   .actions {
+    display: none;
+  }
+  .logo-text {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1041px) {
+  .hamburger {
     display: none;
   }
 }
