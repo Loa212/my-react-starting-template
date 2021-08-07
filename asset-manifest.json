@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/loa212/static/css/main.9f91e04f.chunk.css",
-    "main.js": "/loa212/static/js/main.fab92fb2.chunk.js",
-    "main.js.map": "/loa212/static/js/main.fab92fb2.chunk.js.map",
-    "runtime-main.js": "/loa212/static/js/runtime-main.303bfbc1.js",
-    "runtime-main.js.map": "/loa212/static/js/runtime-main.303bfbc1.js.map",
-    "static/js/2.6eb90284.chunk.js": "/loa212/static/js/2.6eb90284.chunk.js",
-    "static/js/2.6eb90284.chunk.js.map": "/loa212/static/js/2.6eb90284.chunk.js.map",
-    "static/js/3.4b878621.chunk.js": "/loa212/static/js/3.4b878621.chunk.js",
-    "static/js/3.4b878621.chunk.js.map": "/loa212/static/js/3.4b878621.chunk.js.map",
-    "index.html": "/loa212/index.html",
-    "static/css/main.9f91e04f.chunk.css.map": "/loa212/static/css/main.9f91e04f.chunk.css.map",
-    "static/js/2.6eb90284.chunk.js.LICENSE.txt": "/loa212/static/js/2.6eb90284.chunk.js.LICENSE.txt",
-    "static/media/comingSoonHero.fbea4d7d.svg": "/loa212/static/media/comingSoonHero.fbea4d7d.svg"
+    "main.css": "/anobileloris.github.io/static/css/main.9f91e04f.chunk.css",
+    "main.js": "/anobileloris.github.io/static/js/main.fab92fb2.chunk.js",
+    "main.js.map": "/anobileloris.github.io/static/js/main.fab92fb2.chunk.js.map",
+    "runtime-main.js": "/anobileloris.github.io/static/js/runtime-main.1cc1ad28.js",
+    "runtime-main.js.map": "/anobileloris.github.io/static/js/runtime-main.1cc1ad28.js.map",
+    "static/js/2.6eb90284.chunk.js": "/anobileloris.github.io/static/js/2.6eb90284.chunk.js",
+    "static/js/2.6eb90284.chunk.js.map": "/anobileloris.github.io/static/js/2.6eb90284.chunk.js.map",
+    "static/js/3.4b878621.chunk.js": "/anobileloris.github.io/static/js/3.4b878621.chunk.js",
+    "static/js/3.4b878621.chunk.js.map": "/anobileloris.github.io/static/js/3.4b878621.chunk.js.map",
+    "index.html": "/anobileloris.github.io/index.html",
+    "static/css/main.9f91e04f.chunk.css.map": "/anobileloris.github.io/static/css/main.9f91e04f.chunk.css.map",
+    "static/js/2.6eb90284.chunk.js.LICENSE.txt": "/anobileloris.github.io/static/js/2.6eb90284.chunk.js.LICENSE.txt",
+    "static/media/comingSoonHero.fbea4d7d.svg": "/anobileloris.github.io/static/media/comingSoonHero.fbea4d7d.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.303bfbc1.js",
+    "static/js/runtime-main.1cc1ad28.js",
     "static/js/2.6eb90284.chunk.js",
     "static/css/main.9f91e04f.chunk.css",
     "static/js/main.fab92fb2.chunk.js"
